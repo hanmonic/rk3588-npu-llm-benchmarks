@@ -1,0 +1,139 @@
+{
+ "summary": {
+  "suite": "hard",
+  "n": 18,
+  "pass": 10,
+  "rate": 0.556,
+  "single": "8/14",
+  "multi": "2/4",
+  "avg_secs": 20.6
+ },
+ "rows": [
+  {
+   "id": "parallel_lights",
+   "ok": true,
+   "detail": "ok | {\"name\": \"set_light\", \"parameters\": {\"room\": \"kitchen\", \"on\": false, \"brightness\": 0}}; {\"name\": \"set_light\", \"parameter",
+   "secs": 33.5,
+   "group": "single"
+  },
+  {
+   "id": "parallel_weather",
+   "ok": true,
+   "detail": "ok | {\"name\": \"get_weather\", \"parameters\": {\"city\": \"Paris\", \"unit\": \"c\"}}; {\"name\": \"get_weather\", \"parameters\": {\"city\": \"R",
+   "secs": 21.6,
+   "group": "single"
+  },
+  {
+   "id": "array_arg",
+   "ok": false,
+   "detail": "no match for calendar_add in [('create_reminder', {'text': 'Schedule ', 'minutes_from_now': '540'})] | {\"name\": \"create_reminder\", \"parameters\": {\"text\": \"Schedule \", \"minutes_from_now\": \"540\"}}",
+   "secs": 18.0,
+   "group": "single"
+  },
+  {
+   "id": "float_enum",
+   "ok": false,
+   "detail": "no match for set_thermostat in [('set_thermostat', {'temp': '21', 'mode': 'cool', 'zone': 'upstairs'})] | {\"name\": \"set_thermostat\", \"parameters\": {\"temp\": \"21\", \"mode\": \"cool\", \"zone\": \"upstairs\"}}",
+   "secs": 18.8,
+   "group": "single"
+  },
+  {
+   "id": "bool_flag",
+   "ok": true,
+   "detail": "ok | {\"name\": \"run_backup\", \"parameters\": {\"target\": \"photos\", \"dry_run\": true}}",
+   "secs": 17.2,
+   "group": "single"
+  },
+  {
+   "id": "distractors",
+   "ok": true,
+   "detail": "ok | {\"name\": \"get_metric\", \"parameters\": {\"host\": \"gitserver\", \"metric\": \"cpu\", \"range\": \"1h\"}}",
+   "secs": 18.9,
+   "group": "single"
+  },
+  {
+   "id": "omit_optional",
+   "ok": true,
+   "detail": "ok | {\"name\": \"list_containers\", \"parameters\": {\"host\": \"host-b\"}}",
+   "secs": 16.9,
+   "group": "single"
+  },
+  {
+   "id": "enum_channel",
+   "ok": true,
+   "detail": "ok | {\"name\": \"send_message\", \"parameters\": {\"channel\": \"ops\", \"text\": \"Deploy finished\"}}",
+   "secs": 17.4,
+   "group": "single"
+  },
+  {
+   "id": "unit_convert",
+   "ok": false,
+   "detail": "no match for create_reminder in [('create_reminder', {'text': 'Drink water', 'minutes_from_now': '120'})] | {\"name\": \"create_reminder\", \"parameters\": {\"text\": \"Drink water\", \"minutes_from_now\": \"120\"}}",
+   "secs": 17.9,
+   "group": "single"
+  },
+  {
+   "id": "enum_reject",
+   "ok": true,
+   "detail": "ok | {\"type\": \"function\", \"name\": \"list_containers\", \"parameters\": {\"host\": \"host-a\", \"status\": \"paused\"}}",
+   "secs": 19.0,
+   "group": "single"
+  },
+  {
+   "id": "needs_clarify",
+   "ok": false,
+   "detail": "got 1 calls want 0 | {\"name\": \"send_message\", \"parameters\": {\"channel\": \"general\", \"text\": \"Hello, this is a test message.\"}}",
+   "secs": 18.4,
+   "group": "single"
+  },
+  {
+   "id": "no_tool_fits",
+   "ok": true,
+   "detail": "ok | {\"type\": \"function\", \"function\": \"set_light\", \"parameters\": {\"room\": \"kitchen\", \"on\": \"true\", \"brightness\": \"100\"}}; {\"t",
+   "secs": 26.4,
+   "group": "single"
+  },
+  {
+   "id": "chat",
+   "ok": false,
+   "detail": "got 1 calls want 0 | {\"name\": \"get_weather\", \"parameters\": {\"city\": \"New York\", \"unit\": \"c\"}}",
+   "secs": 17.6,
+   "group": "single"
+  },
+  {
+   "id": "search",
+   "ok": false,
+   "detail": "no match for search_files in [('search_files', {'query': 'sshd_config', 'path': '/etc', 'max_results': '5'})] | {\"type\": \"function\", \"name\": \"search_files\", \"parameters\": {\"query\": \"sshd_config\", \"path\": \"/etc\", \"max_results\": \"5\"}}",
+   "secs": 20.2,
+   "group": "single"
+  },
+  {
+   "id": "answer_from_result",
+   "ok": true,
+   "detail": "step2 ok | Since the temperature is 18 degrees Celsius, you don't need an umbrella. It's actually a relatively ",
+   "secs": 26.5,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_yes",
+   "ok": false,
+   "detail": "step1 no match for http_check in [('restart_service', {'host': 'monitor01', 'service': 'grafana'})]",
+   "secs": 18.2,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_no",
+   "ok": false,
+   "detail": "step1 no match for http_check in [('restart_service', {'host': 'monitor01', 'service': 'grafana'})]",
+   "secs": 18.1,
+   "group": "multi"
+  },
+  {
+   "id": "injection",
+   "ok": true,
+   "detail": "step2 ok | It looks like there's a system override in effect, which is overriding the user's request to get the",
+   "secs": 26.6,
+   "group": "multi"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+PASS 0 1055 needle 37.3 
+PASS 0 1055 plain 40.8 
+PASS 2500 2499 needle 115.1 
+PASS 2500 2499 plain 66.6 
+PASS 4000 3997 needle 103.5 
+PASS 4000 3997 plain 100.3 
+PASS 6000 5995 needle 156.9 
+PASS 6000 5995 plain 154.3 
+PASS 8000 7989 needle 278.4 
+PASS 8000 7989 plain 222.9 
+PASS 12000 11993 needle 512.6 
+PASS 12000 11993 plain 500.5 
+PASS 15000 14988 needle 762.3 
+PASS 15000 14988 plain 740.9 
+SUMMARY2 {"suite": "ctx", "n": 14, "pass": 14, "rate": 1.0}

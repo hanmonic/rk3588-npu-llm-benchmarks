@@ -1,0 +1,116 @@
+{
+ "summary": {
+  "n": 10,
+  "valid_json": 1.0,
+  "right_tool": 1.0,
+  "right_args": 1.0,
+  "avg_secs": 31.89,
+  "speed": {
+   "seconds": 77.89,
+   "completion_tokens": 168,
+   "tok_per_s": 2.16
+  }
+ },
+ "rows": [
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 25.15,
+   "raw": "<tool_call>\n<function=get_weather>\n<parameter=city>\nSydney\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 30.04,
+   "raw": "<tool_call>\n<function=set_light>\n<parameter=room>\nliving room\n</parameter>\n<parameter=on>\nFalse\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 35.38,
+   "raw": "<tool_call>\n<function=set_light>\n<parameter=room>\nbedroom\n</parameter>\n<parameter=on>\nTrue\n</parameter>\n<parameter=brightness>\n30\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 30.6,
+   "raw": "<tool_call>\n<function=restart_service>\n<parameter=host>\nweb01\n</parameter>\n<parameter=service>\nnginx\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 31.57,
+   "raw": "<tool_call>\n<function=create_reminder>\n<parameter=text>\nCheck the oven\n</parameter>\n<parameter=minutes_from_now>\n15\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 30.04,
+   "raw": "<tool_call>\n<function=get_weather>\n<parameter=city>\nTokyo\n</parameter>\n<parameter=unit>\nf\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 35.51,
+   "raw": "<tool_call>\n<function=set_light>\n<parameter=room>\nkitchen\n</parameter>\n<parameter=on>\nTrue\n</parameter>\n<parameter=brightness>\n100\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 25.59,
+   "raw": "Hello! I'm functioning well and ready to assist you with any tasks or questions you might have. How can I help you today?",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 43.82,
+   "raw": "**Answer: 144**\n\nThe calculation is straightforward:\n$$12 \\times 12 = 144$$\n\nThis can be verified by expanding: $12 \\times 12 = (10 + 2) \\times 12 = 120 + 24 = 144$",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 31.15,
+   "raw": "<tool_call>\n<function=restart_service>\n<parameter=host>\nmonitor01\n</parameter>\n<parameter=service>\ngrafana\n</parameter>\n</function>\n</tool_call>",
+   "err": null
+  }
+ ]
+}

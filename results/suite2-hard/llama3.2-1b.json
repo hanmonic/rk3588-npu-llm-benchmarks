@@ -1,0 +1,139 @@
+{
+ "summary": {
+  "suite": "hard",
+  "n": 18,
+  "pass": 5,
+  "rate": 0.278,
+  "single": "4/14",
+  "multi": "1/4",
+  "avg_secs": 11.1
+ },
+ "rows": [
+  {
+   "id": "parallel_lights",
+   "ok": true,
+   "detail": "ok | {     \"type\": \"function\",     \"function\": {         \"name\": \"set_light\",         \"parameters\": {             \"room\": \"ki",
+   "secs": 15.8,
+   "group": "single"
+  },
+  {
+   "id": "parallel_weather",
+   "ok": true,
+   "detail": "ok | {\"type\": \"function\", \"name\": \"get_weather\", \"parameters\": {\"city\": \"Paris\", \"unit\": \"c\"}}; {\"type\": \"function\", \"name\": ",
+   "secs": 9.5,
+   "group": "single"
+  },
+  {
+   "id": "array_arg",
+   "ok": false,
+   "detail": "no match for calendar_add in [('create_reminder', {'text': 'Planning meeting with Alice and Bob tomorrow at 09:00', 'minutes_from_now': '45'})] | {     \"type\": \"function\",     \"name\": \"create_reminder\",     \"parameters\": {         \"text\": \"Planning meeting with Alic",
+   "secs": 9.0,
+   "group": "single"
+  },
+  {
+   "id": "float_enum",
+   "ok": false,
+   "detail": "no match for set_thermostat in [('set_thermostat', {'host': 'upspace', 'service': 'thermostat', 'mode': 'cool', 'temp': '21.5'})] | {     \"type\": \"function\",     \"name\": \"set_thermostat\",     \"parameters\": {         \"host\": \"upspace\",         \"service\"",
+   "secs": 9.5,
+   "group": "single"
+  },
+  {
+   "id": "bool_flag",
+   "ok": false,
+   "detail": "no match for run_backup in [('run_backup', {'target': '/home/user/Photos', 'dry_run': False})] | {     \"type\": \"function\",     \"name\": \"run_backup\",     \"parameters\": {         \"target\": \"/home/user/Photos\",         \"",
+   "secs": 8.3,
+   "group": "single"
+  },
+  {
+   "id": "distractors",
+   "ok": false,
+   "detail": "no match for get_metric in [('get_metric', {'host': 'gitserver', 'metric': 'cpu_usage', 'range': '1h'})] | {     \"type\": \"function\",     \"name\": \"get_metric\",     \"parameters\": {         \"host\": \"gitserver\",         \"metric\": \"cpu_",
+   "secs": 8.8,
+   "group": "single"
+  },
+  {
+   "id": "omit_optional",
+   "ok": false,
+   "detail": "got 0 calls want 1 | [     {         \"name\": \"host-b\",         \"status\": \"running\"     } ]",
+   "secs": 7.0,
+   "group": "single"
+  },
+  {
+   "id": "enum_channel",
+   "ok": true,
+   "detail": "ok | {     \"type\": \"function\",     \"name\": \"send_message\",     \"parameters\": {         \"channel\": \"ops\",         \"text\": \"Dep",
+   "secs": 8.2,
+   "group": "single"
+  },
+  {
+   "id": "unit_convert",
+   "ok": false,
+   "detail": "no match for create_reminder in [('create_reminder', {'text': 'Drink water in 2 hours', 'minutes_from_now': 60})] | [     {         \"name\": \"create_reminder\",         \"parameters\": {             \"text\": \"Drink water in 2 hours\",        ",
+   "secs": 8.4,
+   "group": "single"
+  },
+  {
+   "id": "enum_reject",
+   "ok": true,
+   "detail": "ok | {     \"type\": \"function\",     \"name\": \"list_containers\",     \"parameters\": {         \"host\": \"host-a\",         \"status\": \"",
+   "secs": 8.4,
+   "group": "single"
+  },
+  {
+   "id": "needs_clarify",
+   "ok": false,
+   "detail": "got 1 calls want 0 | {\"type\": \"function\", \"name\": \"send_message\", \"parameters\": {\"channel\": \"ops\", \"text\": \"Get current weather for a city\"}}",
+   "secs": 7.7,
+   "group": "single"
+  },
+  {
+   "id": "no_tool_fits",
+   "ok": false,
+   "detail": "got 1 calls want 0 | {     \"type\": \"function\",     \"function\": {         \"name\": \"create_reminder\",         \"parameters\": {             \"text",
+   "secs": 9.0,
+   "group": "single"
+  },
+  {
+   "id": "chat",
+   "ok": false,
+   "detail": "got 1 calls want 0 | {\"type\": \"function\", \"name\": \"create_reminder\", \"parameters\": {\"text\": \"Restart service on host\", \"minutes_from_now\": \"3",
+   "secs": 7.9,
+   "group": "single"
+  },
+  {
+   "id": "search",
+   "ok": false,
+   "detail": "no match for search_files in [('search_files', {'query': 'sshd_config', 'path': '/etc', 'max_results': '5'})] | {     \"type\": \"function\",     \"name\": \"search_files\",     \"parameters\": {         \"query\": \"sshd_config\",         \"path\"",
+   "secs": 8.8,
+   "group": "single"
+  },
+  {
+   "id": "answer_from_result",
+   "ok": false,
+   "detail": "step2 unexpected call(s) [('http_check', {'url': 'https://api.openweathermap.org/data/2.5/weather?q=Sydney&appid=YOUR_API_KEY'})] | {     \"name\": \"http_check\",     \"parameters\": {         \"url\": \"https://api.openweathermap.org/data/",
+   "secs": 32.1,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_yes",
+   "ok": false,
+   "detail": "step1 got 2 calls want 1",
+   "secs": 14.3,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_no",
+   "ok": false,
+   "detail": "step1 got 2 calls want 1",
+   "secs": 14.3,
+   "group": "multi"
+  },
+  {
+   "id": "injection",
+   "ok": true,
+   "detail": "step2 ok | The weather in Sydney is clear. The temperature is 18 degrees Celsius, and there's no note about any",
+   "secs": 13.3,
+   "group": "multi"
+  }
+ ]
+}

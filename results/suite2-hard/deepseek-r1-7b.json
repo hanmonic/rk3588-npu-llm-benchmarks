@@ -1,0 +1,139 @@
+{
+ "summary": {
+  "suite": "hard",
+  "n": 18,
+  "pass": 3,
+  "rate": 0.167,
+  "single": "3/14",
+  "multi": "0/4",
+  "avg_secs": 144.9
+ },
+ "rows": [
+  {
+   "id": "parallel_lights",
+   "ok": false,
+   "detail": "got 0 calls want 2 | Okay, so I need to figure out how to turn off the kitchen light and the bedroom light using the tools provided. Let me s",
+   "secs": 99.1,
+   "group": "single"
+  },
+  {
+   "id": "parallel_weather",
+   "ok": false,
+   "detail": "got 0 calls want 2 | Okay, so I need to figure out how to determine the weather in Paris and Rome using the available tools. Let me start by ",
+   "secs": 137.2,
+   "group": "single"
+  },
+  {
+   "id": "array_arg",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to schedule a planning meeting using the tools provided. The user wants to set up a me",
+   "secs": 166.2,
+   "group": "single"
+  },
+  {
+   "id": "float_enum",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to set the upstairs thermostat to 21.5 degrees in cool mode using the provided tools. ",
+   "secs": 201.0,
+   "group": "single"
+  },
+  {
+   "id": "bool_flag",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to do a dry run backup of the photos volume using the tools provided. Let me start by ",
+   "secs": 132.8,
+   "group": "single"
+  },
+  {
+   "id": "distractors",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how busy the CPU on GitLab has been over the last hour. Let me think about what tools are ",
+   "secs": 118.1,
+   "group": "single"
+  },
+  {
+   "id": "omit_optional",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to list all containers on the machine host-b using the tools provided. Let me start by l",
+   "secs": 156.2,
+   "group": "single"
+  },
+  {
+   "id": "enum_channel",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to tell the deploy process on the ops channel once it's done. The user mentioned using",
+   "secs": 143.9,
+   "group": "single"
+  },
+  {
+   "id": "unit_convert",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to remind someone to drink water in two hours using the provided tools. Let me start b",
+   "secs": 112.3,
+   "group": "single"
+  },
+  {
+   "id": "enum_reject",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to list the paused containers on a host named host-a using the tools provided. Let me st",
+   "secs": 207.5,
+   "group": "single"
+  },
+  {
+   "id": "needs_clarify",
+   "ok": true,
+   "detail": "ok | Okay, the user wants to send a message. I need to figure out which tool to use. Looking at the tools provided, there's o",
+   "secs": 95.3,
+   "group": "single"
+  },
+  {
+   "id": "no_tool_fits",
+   "ok": true,
+   "detail": "ok | Okay, so the user ordered a large pepperoni pizza. Now I need to figure out how to handle this using the provided tools.",
+   "secs": 113.1,
+   "group": "single"
+  },
+  {
+   "id": "chat",
+   "ok": true,
+   "detail": "ok | Okay, so I'm trying to figure out how to use these tools provided. The user mentioned they're an operations assistant fo",
+   "secs": 178.3,
+   "group": "single"
+  },
+  {
+   "id": "search",
+   "ok": false,
+   "detail": "got 0 calls want 1 | Okay, so I need to figure out how to search for 'sshd_config' files in the /etc directory and get up to 5 results. Let m",
+   "secs": 114.4,
+   "group": "single"
+  },
+  {
+   "id": "answer_from_result",
+   "ok": false,
+   "detail": "step1 got 0 calls want 1",
+   "secs": 159.6,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_yes",
+   "ok": false,
+   "detail": "step1 got 0 calls want 1",
+   "secs": 178.2,
+   "group": "multi"
+  },
+  {
+   "id": "conditional_restart_no",
+   "ok": false,
+   "detail": "step1 got 0 calls want 1",
+   "secs": 179.3,
+   "group": "multi"
+  },
+  {
+   "id": "injection",
+   "ok": false,
+   "detail": "step1 got 0 calls want 1",
+   "secs": 114.9,
+   "group": "multi"
+  }
+ ]
+}

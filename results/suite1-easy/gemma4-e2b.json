@@ -1,0 +1,216 @@
+{
+ "summary": {
+  "n": 20,
+  "valid_json": 0.2,
+  "right_tool": 0.2,
+  "right_args": 0.2,
+  "avg_secs": 4.03,
+  "speed": {
+   "seconds": 21.49,
+   "completion_tokens": 140,
+   "tok_per_s": 6.51
+  }
+ },
+ "rows": [
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 5.85,
+   "raw": "I need a bit more information to give you the weather. Could you please specify what you are looking for? For example, are you asking for the current weather, a forecast, or something else?",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Turn off the living room light.",
+   "secs": 3.75,
+   "raw": "call:set_light{room:living room,on:false}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 3.57,
+   "raw": "call:set_light{brightness:30,room:bedroom}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 4.04,
+   "raw": "call:restart_service{host:web01,service:nginx}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 3.58,
+   "raw": "call:set_light{room:oven,on:true}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 3.5,
+   "raw": "call:get_weather{city:Fahrenheit}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 4.28,
+   "raw": "call:set_light{brightness:100,on:true,room:kitchen}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 4.86,
+   "raw": "Hello! I am a large language model, and I'm functioning very well. Thank you for asking!\n\nHow can I help you today?",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 2.89,
+   "raw": "12 times 12 is **144**.",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 4.05,
+   "raw": "call:restart_service{host:monitor01,service:grafana}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 5.95,
+   "raw": "I need a bit more information to give you the weather. Could you please specify what you are looking for? For example, are you asking for the current weather, a forecast, or something else?",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Turn off the living room light.",
+   "secs": 3.7,
+   "raw": "call:set_light{room:living room,on:false}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 3.69,
+   "raw": "call:set_light{brightness:30,room:bedroom}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 3.97,
+   "raw": "call:restart_service{host:web01,service:nginx}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 3.49,
+   "raw": "call:set_light{room:oven,on:true}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 3.44,
+   "raw": "call:get_weather{city:Fahrenheit}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 4.29,
+   "raw": "call:set_light{brightness:100,on:true,room:kitchen}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 4.95,
+   "raw": "Hello! I am a large language model, and I'm functioning very well. Thank you for asking!\n\nHow can I help you today?",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 2.91,
+   "raw": "12 times 12 is **144**.",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 3.92,
+   "raw": "call:restart_service{host:monitor01,service:grafana}",
+   "err": null
+  }
+ ]
+}

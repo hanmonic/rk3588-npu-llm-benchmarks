@@ -1,0 +1,120 @@
+{
+ "summary": {
+  "suite": "batch",
+  "scenarios": 4,
+  "passed": 4,
+  "avg_state_score": 1.0,
+  "precond_errors": 0
+ },
+ "rows": [
+  {
+   "id": "S1_five",
+   "passed": true,
+   "state_score": 1.0,
+   "missing": [],
+   "order_ok": true,
+   "forbidden_call_made": false,
+   "checked_status_first": true,
+   "precond_errors": 0,
+   "unknown_tools": 0,
+   "dupes": 0,
+   "turns": 2,
+   "secs": 95.9,
+   "calls": [
+    "set_light",
+    "garage_door",
+    "camera_record",
+    "set_alarm",
+    "set_water_pressure",
+    "set_water_heater",
+    "bath_tap"
+   ],
+   "final": "I've turned on the kitchen light, closed the garage door, started recording on the front door camera, armed the alarm away mode, and prepared the bath by setting low water pressure, turning on the hea"
+  },
+  {
+   "id": "S2a_goodnight_open",
+   "passed": true,
+   "state_score": 1.0,
+   "missing": [],
+   "order_ok": true,
+   "forbidden_call_made": false,
+   "checked_status_first": true,
+   "precond_errors": 0,
+   "unknown_tools": 0,
+   "dupes": 0,
+   "turns": 3,
+   "secs": 177.6,
+   "calls": [
+    "set_light",
+    "set_light",
+    "lock_door",
+    "get_device_status",
+    "garage_door",
+    "camera_record",
+    "set_alarm",
+    "set_thermostat",
+    "set_water_pressure",
+    "set_water_heater",
+    "bath_tap"
+   ],
+   "final": "I have completed the goodnight routine: turned off the living room light, turned on the hallway light at 20%, locked the front door, closed the garage (as it was open), started recording on the drivew"
+  },
+  {
+   "id": "S2b_goodnight_closed",
+   "passed": true,
+   "state_score": 1.0,
+   "missing": [],
+   "order_ok": true,
+   "forbidden_call_made": false,
+   "checked_status_first": true,
+   "precond_errors": 0,
+   "unknown_tools": 0,
+   "dupes": 0,
+   "turns": 3,
+   "secs": 130.1,
+   "calls": [
+    "set_light",
+    "set_light",
+    "lock_door",
+    "get_device_status",
+    "camera_record",
+    "set_alarm",
+    "set_thermostat",
+    "set_water_pressure",
+    "set_water_heater",
+    "bath_tap"
+   ],
+   "final": "I have completed the goodnight routine: turned off the living room light, turned on the hallway light at 20%, locked the front door, started recording on the driveway camera, armed the alarm for night"
+  },
+  {
+   "id": "S3_ten",
+   "passed": true,
+   "state_score": 1.0,
+   "missing": [],
+   "order_ok": true,
+   "forbidden_call_made": false,
+   "checked_status_first": true,
+   "precond_errors": 0,
+   "unknown_tools": 0,
+   "dupes": 0,
+   "turns": 3,
+   "secs": 161.3,
+   "calls": [
+    "set_light",
+    "set_light",
+    "lock_door",
+    "lock_door",
+    "garage_door",
+    "camera_record",
+    "camera_record",
+    "play_music",
+    "set_thermostat",
+    "set_alarm",
+    "set_water_pressure",
+    "set_water_heater",
+    "bath_tap"
+   ],
+   "final": "I've completed all the requested tasks: kitchen light off, porch light on, front and back doors locked, garage closed, driveway and front door cameras recording, jazz playlist playing in the living ro"
+  }
+ ]
+}

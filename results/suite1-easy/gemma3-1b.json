@@ -1,0 +1,216 @@
+{
+ "summary": {
+  "n": 20,
+  "valid_json": 0.8,
+  "right_tool": 0.8,
+  "right_args": 0.7,
+  "avg_secs": 5.76,
+  "speed": {
+   "seconds": 8.91,
+   "completion_tokens": 113,
+   "tok_per_s": 12.68
+  }
+ },
+ "rows": [
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 5.51,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Sydney\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 6.49,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"living room\",\n        \"on\": false,\n        \"brightness\": 50\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 6.47,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"bedroom\",\n        \"on\": true,\n        \"brightness\": 30\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 6.41,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"web01\"\n      },\n      \"id\": \"restart_service_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 7.21,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"create_reminder\",\n      \"arguments\": {\n        \"text\": \"Check oven\",\n        \"minutes_from_now\": 15\n      },\n      \"id\": \"remind_oven_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 5.67,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7,\n      \"arguments\": {\n        \"city\": \"Tokyo\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 6.5,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"kitchen\",\n        \"on\": true,\n        \"brightness\": 100\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 3.33,
+   "raw": "Hello! I'm doing well, thank you for asking. How can I help you today?",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 4.44,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 5.66,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7,\n      \"arguments\": {\n        \"city\": \"London\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 5.45,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Sydney\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 6.48,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"living room\",\n        \"on\": false,\n        \"brightness\": 50\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 6.46,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"bedroom\",\n        \"on\": true,\n        \"brightness\": 30\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 6.46,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"web01\"\n      },\n      \"id\": \"restart_service_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 7.25,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"create_reminder\",\n      \"arguments\": {\n        \"text\": \"Check oven\",\n        \"minutes_from_now\": 15\n      },\n      \"id\": \"remind_oven_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 5.58,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7,\n      \"arguments\": {\n        \"city\": \"Tokyo\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 6.47,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"kitchen\",\n        \"on\": true,\n        \"brightness\": 100\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 3.34,
+   "raw": "Hello! I'm doing well, thank you for asking. How can I help you today?",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 4.43,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 5.58,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n7,\n      \"arguments\": {\n        \"city\": \"London\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  }
+ ]
+}

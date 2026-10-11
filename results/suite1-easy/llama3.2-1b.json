@@ -1,0 +1,216 @@
+{
+ "summary": {
+  "n": 20,
+  "valid_json": 0.5,
+  "right_tool": 0.3,
+  "right_args": 0.2,
+  "avg_secs": 6.03,
+  "speed": {
+   "seconds": 9.06,
+   "completion_tokens": 116,
+   "tok_per_s": 12.8
+  }
+ },
+ "rows": [
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 3.87,
+   "raw": "[\n    {\n        \"name\": \"get_weather\",\n        \"parameters\": {\n            \"city\": \"Sydney\",\n            \"unit\": \"c\"\n        }\n    }\n]",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Turn off the living room light.",
+   "secs": 3.32,
+   "raw": "{\"type\": \"function\", \"function\": \"set_light\", \"parameters\": {\"room\": \"living room\", \"on\": \"False\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 3.68,
+   "raw": "{\"type\": \"function\", \"function\": \"set_light\", \"parameters\": {\"room\": \"bedroom\", \"on\": \"True\", \"brightness\": \"30\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 3.29,
+   "raw": "{\"type\": \"function\", \"function\": \"restart_service\", \"parameters\": {\"host\": \"web01\", \"service\": \"nginx\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 3.57,
+   "raw": "{\"type\": \"function\", \"function\": \"create_reminder\", \"parameters\": {\"text\": \"Check the oven\", \"minutes_from_now\": \"15\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 3.33,
+   "raw": "{\"type\": \"function\", \"function\": \"get_weather\", \"parameters\": {\"city\": \"Tokyo\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 4.64,
+   "raw": "{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"set_light\",\n        \"parameters\": {\n            \"room\": \"kitchen\",\n            \"on\": true,\n            \"brightness\": 100\n        }\n    }\n}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Hi there, how are you today?",
+   "secs": 5.4,
+   "raw": "{\"type\": \"function\", \"function\": \"get_weather\", \"parameters\": {\"city\": \"London\", \"unit\": \"c\"}}; {\"type\": \"function\", \"name\": \"create_reminder\", \"parameters\": {\"text\": \"Get a coffee\", \"minutes_from_now\": \"30\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 4,
+   "prompt": "What is 12 times 12?",
+   "secs": 26.0,
+   "raw": "{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"parameters\": {\n            \"city\": \"New York\",\n            \"unit\": \"c\"\n        }\n    },\n    \"result\": {\n        \"type\": \"integer\",\n        \"value\": 144\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"create_reminder\",\n        \"parameters\": {\n            \"text\": \"Buy milk\",\n            \"minutes_from_now\": \"60\"\n        }\n    },\n    \"result\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"text\": {\n                \"type\": \"string\"\n            },\n            \"minutes_from_now\"",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 3.37,
+   "raw": "{\"type\": \"function\", \"name\": \"restart_service\", \"parameters\": {\"host\": \"grafana\", \"service\": \"grafana\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 3.67,
+   "raw": "[\n    {\n        \"name\": \"get_weather\",\n        \"parameters\": {\n            \"city\": \"Sydney\",\n            \"unit\": \"c\"\n        }\n    }\n]",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Turn off the living room light.",
+   "secs": 3.27,
+   "raw": "{\"type\": \"function\", \"function\": \"set_light\", \"parameters\": {\"room\": \"living room\", \"on\": \"False\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 3.7,
+   "raw": "{\"type\": \"function\", \"function\": \"set_light\", \"parameters\": {\"room\": \"bedroom\", \"on\": \"True\", \"brightness\": \"30\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 3.33,
+   "raw": "{\"type\": \"function\", \"function\": \"restart_service\", \"parameters\": {\"host\": \"web01\", \"service\": \"nginx\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 3.52,
+   "raw": "{\"type\": \"function\", \"function\": \"create_reminder\", \"parameters\": {\"text\": \"Check the oven\", \"minutes_from_now\": \"15\"}}",
+   "err": null
+  },
+  {
+   "valid_json": false,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 0,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 3.29,
+   "raw": "{\"type\": \"function\", \"function\": \"get_weather\", \"parameters\": {\"city\": \"Tokyo\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 4.59,
+   "raw": "{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"set_light\",\n        \"parameters\": {\n            \"room\": \"kitchen\",\n            \"on\": true,\n            \"brightness\": 100\n        }\n    }\n}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Hi there, how are you today?",
+   "secs": 5.23,
+   "raw": "{\"type\": \"function\", \"function\": \"get_weather\", \"parameters\": {\"city\": \"London\", \"unit\": \"c\"}}; {\"type\": \"function\", \"name\": \"create_reminder\", \"parameters\": {\"text\": \"Get a coffee\", \"minutes_from_now\": \"30\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 4,
+   "prompt": "What is 12 times 12?",
+   "secs": 26.21,
+   "raw": "{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"parameters\": {\n            \"city\": \"New York\",\n            \"unit\": \"c\"\n        }\n    },\n    \"result\": {\n        \"type\": \"integer\",\n        \"value\": 144\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"create_reminder\",\n        \"parameters\": {\n            \"text\": \"Buy milk\",\n            \"minutes_from_now\": \"60\"\n        }\n    },\n    \"result\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"text\": {\n                \"type\": \"string\"\n            },\n            \"minutes_from_now\"",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 3.37,
+   "raw": "{\"type\": \"function\", \"name\": \"restart_service\", \"parameters\": {\"host\": \"grafana\", \"service\": \"grafana\"}}",
+   "err": null
+  }
+ ]
+}

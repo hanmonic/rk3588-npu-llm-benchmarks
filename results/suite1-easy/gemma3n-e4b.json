@@ -1,0 +1,216 @@
+{
+ "summary": {
+  "n": 20,
+  "valid_json": 1.0,
+  "right_tool": 1.0,
+  "right_args": 1.0,
+  "avg_secs": 26.33,
+  "speed": {
+   "seconds": 43.88,
+   "completion_tokens": 146,
+   "tok_per_s": 3.33
+  }
+ },
+ "rows": [
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 23.33,
+   "raw": "Okay, I understand. \n\n```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Sydney\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 23.28,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"living room\",\n        \"on\": false\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 27.3,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"bedroom\",\n        \"on\": true,\n        \"brightness\": 30\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 26.12,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"web01\",\n        \"service\": \"nginx\"\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 27.33,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"create_reminder\",\n      \"arguments\": {\n        \"text\": \"Check the oven\",\n        \"minutes_from_now\": 15\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 23.64,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Tokyo\",\n        \"unit\": \"f\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 27.71,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"kitchen\",\n        \"on\": true,\n        \"brightness\": 100\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 21.14,
+   "raw": "I'm doing well, thank you for asking! I'm ready to assist. How can I help you today? \n\n(I am an AI and don't have feelings, but I'm programmed to be helpful!)\n\n\n\n",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 31.04,
+   "raw": "This query is a bit of a trick question! I'm designed to help with tasks related to the provided tools. The prompt asks me to respond based on the context, but it doesn't provide any information about what I should do with the question \"What is 12 times 12?\".\n\nSince there are no instructions or context for this task, I will simply state that 12 times 12 is 144.\n\n\n\n",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 31.73,
+   "raw": "Okay, I understand. Here's the tool call to restart the grafana service on monitor01:\n\n```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"monitor01\",\n        \"service\": \"grafana\"\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```\n",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 23.36,
+   "raw": "Okay, I understand. \n\n```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Sydney\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 23.24,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"living room\",\n        \"on\": false\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 27.69,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"bedroom\",\n        \"on\": true,\n        \"brightness\": 30\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 26.52,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"web01\",\n        \"service\": \"nginx\"\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 27.43,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"create_reminder\",\n      \"arguments\": {\n        \"text\": \"Check the oven\",\n        \"minutes_from_now\": 15\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 23.77,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"get_weather\",\n      \"arguments\": {\n        \"city\": \"Tokyo\",\n        \"unit\": \"f\"\n      }\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 27.79,
+   "raw": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"set_light\",\n      \"arguments\": {\n        \"room\": \"kitchen\",\n        \"on\": true,\n        \"brightness\": 100\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "Hi there, how are you today?",
+   "secs": 21.16,
+   "raw": "I'm doing well, thank you for asking! I'm ready to assist. How can I help you today? \n\n(I am an AI and don't have feelings, but I'm programmed to be helpful!)\n\n\n\n",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 0,
+   "prompt": "What is 12 times 12?",
+   "secs": 30.97,
+   "raw": "This query is a bit of a trick question! I'm designed to help with tasks related to the provided tools. The prompt asks me to respond based on the context, but it doesn't provide any information about what I should do with the question \"What is 12 times 12?\".\n\nSince there are no instructions or context for this task, I will simply state that 12 times 12 is 144.\n\n\n\n",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 32.04,
+   "raw": "Okay, I understand. Here's the tool call to restart the grafana service on monitor01:\n\n```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"restart_service\",\n      \"arguments\": {\n        \"host\": \"monitor01\",\n        \"service\": \"grafana\"\n      },\n      \"id\": \"call_1___\"\n    }\n  ]\n}\n```\n",
+   "err": null
+  }
+ ]
+}

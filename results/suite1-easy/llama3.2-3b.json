@@ -1,0 +1,216 @@
+{
+ "summary": {
+  "n": 20,
+  "valid_json": 1.0,
+  "right_tool": 0.8,
+  "right_args": 0.6,
+  "avg_secs": 9.39,
+  "speed": {
+   "seconds": 24.69,
+   "completion_tokens": 147,
+   "tok_per_s": 5.95
+  }
+ },
+ "rows": [
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 7.52,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"Sydney\", \"unit\": \"c\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 7.44,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"living room\", \"on\": \"false\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 8.15,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"bedroom\", \"on\": true, \"brightness\": 30}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 7.39,
+   "raw": "{\"name\": \"restart_service\", \"parameters\": {\"host\": \"web01\", \"service\": \"nginx\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 7.95,
+   "raw": "{\"name\": \"create_reminder\", \"parameters\": {\"text\": \"Check the oven\", \"minutes_from_now\": \"15\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 7.35,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"Tokyo\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 8.1,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"kitchen\", \"on\": true, \"brightness\": 100}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Hi there, how are you today?",
+   "secs": 7.38,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"New York\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "What is 12 times 12?",
+   "secs": 7.11,
+   "raw": "{\"name\": \"multiply\", \"parameters\": {\"x\": \"12\", \"y\": \"12\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 7.68,
+   "raw": "{\"name\": \"restart_service\", \"parameters\": {\"host\": \"monitor01\", \"service\": \"grafana\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "What's the weather in Sydney?",
+   "secs": 7.59,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"Sydney\", \"unit\": \"c\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Turn off the living room light.",
+   "secs": 11.27,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"living room\", \"on\": \"false\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Set the bedroom light to 30 percent brightness.",
+   "secs": 12.01,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"bedroom\", \"on\": true, \"brightness\": 30}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Restart nginx on host web01.",
+   "secs": 11.28,
+   "raw": "{\"name\": \"restart_service\", \"parameters\": {\"host\": \"web01\", \"service\": \"nginx\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Remind me to check the oven in 15 minutes.",
+   "secs": 12.14,
+   "raw": "{\"name\": \"create_reminder\", \"parameters\": {\"text\": \"Check the oven\", \"minutes_from_now\": \"15\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "It is Fahrenheit I want. Weather in Tokyo?",
+   "secs": 11.53,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"Tokyo\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Switch the kitchen light on at full brightness.",
+   "secs": 12.26,
+   "raw": "{\"name\": \"set_light\", \"parameters\": {\"room\": \"kitchen\", \"on\": true, \"brightness\": 100}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "Hi there, how are you today?",
+   "secs": 11.49,
+   "raw": "{\"name\": \"get_weather\", \"parameters\": {\"city\": \"New York\", \"unit\": \"f\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": false,
+   "right_args": false,
+   "n_calls": 1,
+   "prompt": "What is 12 times 12?",
+   "secs": 10.51,
+   "raw": "{\"name\": \"multiply\", \"parameters\": {\"x\": \"12\", \"y\": \"12\"}}",
+   "err": null
+  },
+  {
+   "valid_json": true,
+   "right_tool": true,
+   "right_args": true,
+   "n_calls": 1,
+   "prompt": "Please restart the grafana service on monitor01.",
+   "secs": 11.65,
+   "raw": "{\"name\": \"restart_service\", \"parameters\": {\"host\": \"monitor01\", \"service\": \"grafana\"}}",
+   "err": null
+  }
+ ]
+}

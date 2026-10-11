@@ -1,0 +1,70 @@
+# Raw summary of suites 1-3. Notes: the gemma4-e2b row uses the original Qwen-only parser (0.20); with the parser fixed for Gemma's call:name{} format it rescores to about 0.6 right-tool / 0.6 args. Hostnames in test prompts were renamed.
+
+== SUITE 1 (10 prompts x2): valid / tool / args / tok/s / avg s
+bench-gemma4-e2b               0.20 0.20 0.20  6.51 tok/s  4.0s
+bench-q35-2b                   1.00 1.00 0.90  9.88 tok/s  7.6s
+bench-q35-4b                   1.00 1.00 1.00  4.47 tok/s  21.2s
+bench-q35-9b                   1.00 1.00 1.00  2.16 tok/s  31.9s
+bench1-deepseek-r1-1.5b        0.30 0.30 0.20  10.61 tok/s  33.5s
+bench1-deepseek-r1-7b          0.30 0.30 0.30  2.90 tok/s  104.1s
+bench1-gemma3-1b               0.80 0.80 0.70  12.68 tok/s  5.8s
+bench1-gemma3-4b               1.00 0.80 0.80  3.87 tok/s  18.2s
+bench1-gemma3n-e4b             1.00 1.00 1.00  3.33 tok/s  26.3s
+bench1-llama3.2-1b             0.50 0.30 0.20  12.80 tok/s  6.0s
+bench1-llama3.2-3b             1.00 0.80 0.60  5.95 tok/s  9.4s
+bench1-qwen3-0.6b              1.00 1.00 0.80  17.79 tok/s  2.4s
+bench1-qwen3-1.7b              1.00 1.00 1.00  10.46 tok/s  4.1s
+bench1-qwen3-4b-16k            1.00 1.00 1.00  5.12 tok/s  11.3s
+bench1-qwen3-4b                1.00 1.00 1.00  4.85 tok/s  11.6s
+bench1-qwen3-8b-allnpu         1.00 1.00 1.00  2.44 tok/s  17.1s
+
+== HARD SUITE (single/multi)
+bench2-q35-2b-hard             pass 16/18  single 12/14  multi 4/4  avg 15.9s
+bench2-q35-4b-16k-hard         pass 16/18  single 13/14  multi 3/4  avg 44.7s
+bench2-deepseek-r1-1.5b-hard   pass 3/18  single 3/14  multi 0/4  avg 47.3s
+bench2-deepseek-r1-7b-hard     pass 3/18  single 3/14  multi 0/4  avg 144.9s
+bench2-gemma3-1b-hard          pass 5/18  single 3/14  multi 2/4  avg 16.5s
+bench2-gemma3-4b-hard          pass 12/18  single 11/14  multi 1/4  avg 47.5s
+bench2-gemma3n-e4b-hard        pass 8/18  single 8/14  multi 0/4  avg 53.7s
+bench2-llama3.2-1b-hard        pass 5/18  single 4/14  multi 1/4  avg 11.1s
+bench2-llama3.2-3b-hard        pass 10/18  single 8/14  multi 2/4  avg 20.6s
+bench2-qwen3-0.6b-hard         pass 14/18  single 12/14  multi 2/4  avg 6.0s
+bench2-qwen3-1.7b-hard         pass 14/18  single 13/14  multi 1/4  avg 10.6s
+bench2-qwen3-4b-16k-hard       pass 17/18  single 14/14  multi 3/4  avg 22.1s
+bench2-qwen3-4b-hard           pass 17/18  single 14/14  multi 3/4  avg 22.9s
+bench2-qwen3-8b-allnpu-hard    pass 18/18  single 14/14  multi 4/4  avg 36.3s
+
+== CONTEXT SUITE (target tokens, task, result, secs)
+bench2-q35-4b-16k-ctx.log
+   PASS 0 1055 needle 37.3 
+   PASS 0 1055 plain 40.8 
+   PASS 2500 2499 needle 115.1 
+   PASS 2500 2499 plain 66.6 
+   PASS 4000 3997 needle 103.5 
+   PASS 4000 3997 plain 100.3 
+   PASS 6000 5995 needle 156.9 
+   PASS 6000 5995 plain 154.3 
+   PASS 8000 7989 needle 278.4 
+   PASS 8000 7989 plain 222.9 
+   PASS 12000 11993 needle 512.6 
+   PASS 12000 11993 plain 500.5 
+   PASS 15000 14988 needle 762.3 
+   PASS 15000 14988 plain 740.9 
+   SUMMARY2 {"suite": "ctx", "n": 14, "pass": 14, "rate": 1.0}
+
+== BATCH SUITE
+bench3-q35-2b-batch.log
+   FAIL S1_five state=0.86 order=False precond_err=2 turns=7 61s missing=['heater on 38C']
+   FAIL S2a_goodnight_open state=0.30 order=True precond_err=0 turns=10 80s missing=['living off', 'hallway 20%', 'alarm arm_night', 'bedroom 19', 'pressure=low', 'heater on 40C', 'tap open fil
+   FAIL S2b_goodnight_closed state=0.40 order=True precond_err=0 turns=10 71s missing=['living off', 'hallway 20%', 'alarm arm_night', 'pressure=low', 'heater on 40C', 'tap open fill 60']
+   FAIL S3_ten state=0.08 order=True precond_err=0 turns=10 219s missing=['kitchen off', 'porch on', 'front locked', 'back locked', 'garage closed', 'rec driveway', 'rec front', 'jazz living 30
+   SUMMARY3 {"suite": "batch", "scenarios": 4, "passed": 0, "avg_state_score": 0.41, "precond_errors": 2}
+bench3-q35-4b-batch.log
+   PASS S1_five state=1.00 order=True precond_err=0 turns=2 96s 
+   PASS S2a_goodnight_open state=1.00 order=True precond_err=0 turns=3 178s 
+   PASS S2b_goodnight_closed state=1.00 order=True precond_err=0 turns=3 130s 
+   PASS S3_ten state=1.00 order=True precond_err=0 turns=3 161s 
+   SUMMARY3 {"suite": "batch", "scenarios": 4, "passed": 4, "avg_state_score": 1.0, "precond_errors": 0}
+
+== LOAD FAILURES
+ALLDONE-RESULTS-WRITTEN
